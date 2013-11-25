@@ -1,0 +1,14 @@
+﻿@model STS.Controllers.TokenModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>title</h2>
+@using (Html.BeginForm(null, null, FormMethod.Post, new {@action = Model.Response.BaseUri}))
+{
+    <input type="hidden" name="wa" value="@Model.Response.Action"/>
+    <input type="hidden" name="wresult" value="@Model.Response.Result"/>
+    <input type="hidden" name="wctx" value="@Model.Response.Context"/>
+}
+<script language="javascript"> window.setTimeout('document.forms[0].submit()');</script>

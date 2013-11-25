@@ -1,0 +1,17 @@
+﻿@model STS.Controllers.LoginModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>title</h2>
+@using (Html.BeginForm((string)ViewBag.FormAction, "Authentication"))
+{
+    @Html.HiddenFor(m => m.ReturnUrl)
+
+    @Html.LabelFor(m => m.UserName)
+    @Html.TextBoxFor(m => m.UserName)
+
+    <input type="submit" id="submit" name="Login" value="Login"/>
+
+}

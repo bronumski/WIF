@@ -1,0 +1,9 @@
+_ReSharper*
+[Oo]bj/
+[Bb]in/
+[Pp]ackages/
+[Bb]uild/
+[Ll]ogs/
+*.suo
+*.user
+*.dotCover
